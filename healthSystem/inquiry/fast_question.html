@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <script src="../js/mui.min.js"></script> 
+    <link href="../css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="../css/mydoctor.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/fast_question.css"/>
+    <script type="text/javascript" src="../js/mui.min.js" ></script>
+    <style type="text/css">
+    
+    	
+    	.others-1{
+    		display: inline-block;
+    		margin: 15px 15px;
+    		color: #A9A9A9;
+    	}
+        .others-2{
+        	padding: 5px  0px;
+        }
+    	.condition .mui-radio{
+				float: right;
+		}
+
+		 .condition .mui-radio input[type=radio]:checked:before {
+		    content: '\e442';
+		    }
+		 .mui-input-row label{
+		 	padding-right: 50px;
+		 }
+
+    </style>
+</head>
+<body>
+	
+		<header class="mui-bar mui-bar-nav public-color">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">描述您的情况</h1>
+		</header>
+		<div class="mui-content">
+			<p>填写你的情况</p>
+			<form class="mui-input-group mui-card  basetext">
+				
+					<div class="mui-input-row ">
+					    
+					    <input type="text" class="mui-input-clear" placeholder="请填写所患疾病">
+					</div>
+					<div class="mui-input-row condition">
+					    
+					   <p class="others-1" >是否去过医院就诊</p>
+					
+					    
+					   <div class="mui-input-row mui-radio mui-right others-2">
+								<div class="mui-input-row mui-radio">
+								    <label>否</label>
+								    <input name="sex" type="radio">
+								</div>
+								   <div class="mui-input-row mui-radio">
+								    <label>是</label>
+								    <input name="sex" type="radio" checked>
+								</div> 
+						</div>
+					</div>	
+					    
+					
+					
+				
+				
+			</form>
+			
+					<div class="mui-input-row" style="margin: 10px 5px;">
+						<p>疾病详情，病史描述</p>
+						<textarea id="textarea" rows="5" placeholder="详细病情....." ></textarea>
+					</div>
+					
+					
+	<!--上传图片-->				
+					<p>上传有助于医生更了解您的病情的资料（选填，如提供患者的检查情况，检查报告，CT照片，所用药物）</p>
+			
+			
+		<div id="" class="addphoto">
+			
+			
+			<div id="image-list" class="row image-list">
+				
+				</div>
+	    </div>
+		
+	
+			
+		
+					
+					
+	<!--提交-->
+				<div class="submit">
+					<span class="mui-btn mui-btn-success ">
+					快速提问
+					</span>
+				</div>
+							
+		</div>
+
+<script src="../js/feedback_mydoctor.js" type="text/javascript" charset="utf-8"></script>
+		
+</body>
+</html>

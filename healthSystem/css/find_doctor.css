@@ -1,0 +1,67 @@
+
+
+
+/*八宫格常见科室*/
+.box-a{
+	
+	background: #fff;
+	overflow: hidden;
+}
+.box-a .mui-table-view-cell:after{
+	height: 0px;
+}
+.box-a-l{
+	width: 25%;
+	text-align: center;
+	padding: 15px 0px;
+	float: left;
+	/*border-right: 1px solid #f0f0f0;
+	border-bottom: 1px solid #f0f0f0;*/
+}
+.box-a-l  span{
+	
+	font-size: 35px;
+	/*display: inline-block;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 100px;
+	color: #fff;*/
+}
+.box-a-l p{
+	margin: 0px;
+	padding-top: 5px;
+	color: #000;
+	font-size: 13px;
+}
+.tu-yi{
+	color:#FF9F22;
+}
+.tu-er{
+	color:#FF6767;
+}
+
+.tu-san{
+	color:#8A90F9;
+}
+
+.tu-si{
+	color:#FED030;
+}
+
+.tu-wu{
+	color:#FF9F22;
+}
+
+.tu-liu{
+	color:#4F92EF;
+}
+
+.tu-qi{
+	color:#FECF30;
+}
+
+.tu-ba{
+	color:#4EC7EF;
+}
+/*八宫格常见科室*/

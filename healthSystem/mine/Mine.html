@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<!--<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">-->
+		<link rel="stylesheet" type="text/css" href="../css/mui.min.css"/>
+		<style>		
+			.mui-table-view {
+				margin-top: 20px;
+			}
+			.head-img {
+				width: 40px;
+				height: 40px;
+			}
+		</style>
+	</head>
+	<script type="text/javascript" src="../js/mui.min.js" ></script>
+	<script type="text/javascript">
+		mui.plusReady(function() {
+					var account = document.getElementById('account');
+					var recharge = document.getElementById('recharge');
+					var follow = document.getElementById('follow');
+					var feedback = document.getElementById('feedback');
+					var about = document.getElementById('about');
+					var general = document.getElementById('general');
+					account.addEventListener('tap',function(event){
+						mui.openWindow({
+							url: 'account.html',
+							id: 'account',
+							preload: true,
+							show: {
+								aniShow: 'pop-in'
+							},
+							waiting: {
+								autoShow: false
+							}
+						});
+					},false);
+					recharge.addEventListener('tap',function(event){
+						mui.openWindow({
+							url: 'recharge.html',
+							id: 'recharge',
+							preload: true,
+							show: {
+								aniShow: 'pop-in'
+							},
+							waiting: {
+								autoShow: false
+							}
+						});
+					},false);
+					follow.addEventListener('tap',function(event){
+						mui.openWindow({
+							url: 'follow.html',
+							id: 'follow',
+							preload: true,
+							show: {
+								aniShow: 'pop-in'
+							},
+							waiting: {
+								autoShow: false
+							}
+						});
+					},false);
+					feedback.addEventListener('tap',function(event){
+						mui.openWindow({
+							url: 'feedback.html',
+							id: 'feedback',
+							preload: true,
+							show: {
+								aniShow: 'pop-in'
+							},
+							waiting: {
+								autoShow: false
+							}
+						});
+					},false);
+					about.addEventListener('tap',function(event){
+						mui.openWindow({
+							url: 'about.html',
+							id: 'about',
+							preload: true,
+							show: {
+								aniShow: 'pop-in'
+							},
+							waiting: {
+								autoShow: false
+							}
+						});
+					},false);
+					general.addEventListener('tap',function(event){
+						mui.openWindow({
+							url: 'general.html',
+							id: 'general',
+							preload: true,
+							show: {
+								aniShow: 'pop-in'
+							},
+							waiting: {
+								autoShow: false
+							}
+						});
+					},false);
+					
+				});
+	</script>
+	<body>	
+		<header class="mui-bar mui-bar-nav">
+		    <h1 class="mui-title">标题</h1>
+		</header>
+	
+			<!--页面主内容区开始-->
+			<div class="mui-content">	
+						<ul class="mui-table-view mui-table-view-chevron">
+							<li class="mui-table-view-cell mui-media">
+								<a class="mui-navigate-right" id="account">
+									<img class="mui-media-object mui-pull-left head-img" id="head-img" src=""/>
+									<div class="mui-media-body">
+										Hello YGT
+										<p class='mui-ellipsis'>账号:YGT</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+						<ul class="mui-table-view mui-table-view-chevron">
+							<li class="mui-table-view-cell">
+								<a id="recharge" class="mui-navigate-right">我的账户（充值）</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a id="follow" class="mui-navigate-right">我的关注（医院、医生）</a>
+							</li>
+						</ul>
+						<ul class="mui-table-view mui-table-view-chevron">
+							<li class="mui-table-view-cell">
+								<a id="feedback" class="mui-navigate-right">意见反馈</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a id="about" class="mui-navigate-right">关于 <i class="mui-pull-right update">V1.0.1</i></a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a id="general" class="mui-navigate-right">通用设置（推送更新）</a>
+							</li>
+						</ul>
+						
+						<ul class="mui-table-view">
+							<li class="mui-table-view-cell" style="text-align: center;">
+								<a>退出登录</a>
+							</li>
+						</ul>
+					</div>
+			</div>
+	</body>	
+</html>
